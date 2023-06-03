@@ -1,0 +1,44 @@
+{
+  "name": "tedon/laravel-finnotech",
+  "description": "A laravel bridge to Finnotech API.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pouya Zouravand",
+      "email": "pouya.zuravand@gmail.com"
+    }
+  ],
+  "type": "library",
+  "keywords": [
+    "Laravel",
+    "Finnotech",
+    "LaravelFinnotech",
+    "Tedon"
+  ],
+  "require": {
+    "php": ">=8.2",
+    "hekmatinasser/verta": "^8.3"
+  },
+  "require-dev": {
+    "orchestra/canvas": "^v8.1",
+    "orchestra/testbench": "^v8.5"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Tedon\\LaravelFinnotech\\Providers\\FinnotechServiceProvider"
+      ],
+      "aliases": {
+        "Finnotech": "Tedon\\LaravelFinnotech\\Facades\\Finnotech"
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Tedon\\LaravelFinnotech\\": "src"
+    }
+  },
+  "autoload-dev": {
+  },
+  "minimum-stablity": "dev"
+}
